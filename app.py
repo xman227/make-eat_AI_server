@@ -73,8 +73,8 @@ def test():
 
         json_output = json.dumps(detection_dic, ensure_ascii=False, indent= 2)
 
-        with open('./json_output.json', 'w', encoding='utf-8') as outfile:
-            json.dump(json_output, outfile, ensure_ascii=False, indent=2)
+        # with open('./json_output.json', 'w', encoding='utf-8') as outfile:
+        #     json.dump(json_output, outfile, ensure_ascii=False, indent=2)
 
         return json_output
  
