@@ -1,12 +1,7 @@
-import os
 import torch
 from PIL import Image
 import json
 from flask import Flask, jsonify, request, make_response
-
-import webbrowser
-import urllib.request
-
 
 file_path = "./Makeat_foodlist.json"
 with open(file_path, encoding='utf-8') as f:
