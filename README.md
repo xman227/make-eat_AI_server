@@ -29,4 +29,7 @@ you can post it to url of this : {your host}/image
 
 
 ## Ref.
+
+AWS ec2 upload
 https://itsjh.tistory.com/36
+https://velog.io/@jaehyeong/Flask-%EC%9B%B9-%EC%84%9C%EB%B2%84-AWS-EC2%EC%97%90-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0
