@@ -5,6 +5,7 @@
 ### 1. Install the dependencies
 ```sh
 pip install -r requirements.txt
+pip install ultralytics
 ```
 IF you need `piltu`, you can install that using pip or pip3
 
@@ -15,7 +16,11 @@ flask run
 
 #Mac
 python3 app.py
+
 ```
+
+
+
 
 ### 3. request the post method.
 you can post it to url of this : {your host}/image
@@ -27,6 +32,23 @@ you can post it to url of this : {your host}/image
 ```
 <br><br/>
 
+
+
+### 4. if you run code with production mode/
+you can use AWS EC2 service.
+```sh
+#it depends on AMI - DL AMI GPU Pytorch 1.13.1 Linux2
+
+sudo yum install git
+git clone https://github.com/MAK-E-AT/AI.git
+cd AI
+pip install -r requirements.txt
+pip install ultralytics
+python3 app.py 
+
+
+
+```
 
 ## Ref.
 
