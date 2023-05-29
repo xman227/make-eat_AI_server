@@ -62,3 +62,6 @@ https://cinema4dr12.tistory.com/1314
 
 - AWS ssh 접근 시 root 계정을 막을 때
 https://asufi.tistory.com/entry/AWS-EC2-%EC%A0%91%EC%86%8D-root-%EA%B6%8C%ED%95%9C
+
+- AWS EC2 에서 nohup 을 이용하여 flask 서버를  백그라운드 실행하였다.  
+https://jaeheonit.tistory.com/47
