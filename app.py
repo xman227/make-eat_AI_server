@@ -20,6 +20,8 @@ def test():
     if request.method == 'POST':
         print('POST')
         data = request.get_json()
+
+        print(data)
         #client에서 post하려고 요청 온 데이터를 해당 방식으로 추출
         #post 방식의 경우에는 데이터뿐 아니라 다양한 값들이 필요한 데이터와 섞여서 오기 때문에 
         #우선 데이터 추출하는 과정이 필요
