@@ -20,7 +20,10 @@ def test():
     if request.method == 'POST':
         print('POST')
         print('문제가 뭐임')
-        data = request.get_json()
+        data = request.files['image']
+        print(data)
+
+        #data = request.get_json()
 
         print(data)
         #client에서 post하려고 요청 온 데이터를 해당 방식으로 추출
