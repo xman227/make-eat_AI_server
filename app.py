@@ -2,6 +2,8 @@ import torch
 from PIL import Image
 import json
 from flask import Flask, jsonify, request, make_response
+from werkzeug import secure_filename, allowed_file
+import os
 
 file_path = "./Makeat_foodlist.json"
 with open(file_path, encoding='utf-8') as f:
@@ -19,13 +21,16 @@ app = Flask(__name__)
 def test():
     if request.method == 'POST':
         print('POST')
-        print('문제가 뭐임')
-        data = request.files['image']
-        print(data)
+
+        file = request.files['image']
+        print(file)
+
+        if file and allowed_file(file.filename):
+            filename = secure_filename(file.filename)
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'], 'actual_filename'))
 
         #data = request.get_json()
 
-        print(data)
         #client에서 post하려고 요청 온 데이터를 해당 방식으로 추출
         #post 방식의 경우에는 데이터뿐 아니라 다양한 값들이 필요한 데이터와 섞여서 오기 때문에 
         #우선 데이터 추출하는 과정이 필요
