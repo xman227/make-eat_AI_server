@@ -2,7 +2,6 @@ import torch
 from PIL import Image
 import json
 from flask import Flask, jsonify, request, make_response
-from werkzeug import secure_filename, allowed_file
 import os
 
 file_path = "./Makeat_foodlist.json"
@@ -25,10 +24,6 @@ def test():
         file = request.files['image']
         print(file)
 
-        if file and allowed_file(file.filename):
-            filename = secure_filename(file.filename)
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'], 'actual_filename'))
-
         #data = request.get_json()
 
         #client에서 post하려고 요청 온 데이터를 해당 방식으로 추출
@@ -39,7 +34,7 @@ def test():
         #print(data['url'])
         # 그러면 서버에서 데이터 처리에 필요한 데이터 기준으로 키값으로 데이터 "저장"
 
-        image_path = data['url']  #앱에서 촬영된 사진경로
+        #image_path = data['url']  #앱에서 촬영된 사진경로
 
 
         device = torch.device('cpu')
