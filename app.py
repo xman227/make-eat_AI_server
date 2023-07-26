@@ -19,6 +19,7 @@ app = Flask(__name__)
 def test():
     if request.method == 'POST':
         print('POST')
+        print('문제가 뭐임')
         data = request.get_json()
 
         print(data)
