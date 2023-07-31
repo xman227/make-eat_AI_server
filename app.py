@@ -26,11 +26,10 @@ def test():
         print(f'사진의 이름과 형태는 : {file}')
 
         device = torch.device('cpu')
-        model.to(device)
-
         # 업로드한 pt model 주소
         model = torch.hub.load('ultralytics/yolov5', 'custom', './best.pt',force_reload=False)  
-        
+        model.to(device)
+
         # 결과 반환
         img = Image.open(file)
         results = model(img)
