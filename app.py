@@ -22,34 +22,18 @@ def test():
         print('POST')
 
         file = request.files['image']
-        print('여기가 안돼?')
 
-        print(file)
-        print('아니면 여기가 안돼?')
-
-        #data = request.get_json()
-
-        #client에서 post하려고 요청 온 데이터를 해당 방식으로 추출
-        #post 방식의 경우에는 데이터뿐 아니라 다양한 값들이 필요한 데이터와 섞여서 오기 때문에 
-        #우선 데이터 추출하는 과정이 필요
-        #print(data)
-        # 그러면 데이터가 딕셔너리형태로 추출
-        #print(data['url'])
-        # 그러면 서버에서 데이터 처리에 필요한 데이터 기준으로 키값으로 데이터 "저장"
-
-        #image_path = data['url']  #앱에서 촬영된 사진경로
-
+        print(f'사진의 이름과 형태는 : {file}')
 
         device = torch.device('cpu')
         model = torch.hub.load('ultralytics/yolov5', 'custom', './best.pt',force_reload=False)  
         # 업로드한 pt model 주소
-        
         model.to(device)
 
         #save_dir = './result'   #원하는 경로로 변경가능
 
         # Load the image using PIL
-        img = Image.open(image_path)
+        img = Image.open(file)
 
         # Run detection on the image
         results = model(img)
