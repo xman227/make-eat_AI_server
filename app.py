@@ -22,7 +22,10 @@ def test():
         print('POST')
 
         file = request.files['image']
+        print('여기가 안돼?')
+
         print(file)
+        print('아니면 여기가 안돼?')
 
         #data = request.get_json()
 
