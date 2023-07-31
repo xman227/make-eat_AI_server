@@ -26,36 +26,29 @@ def test():
         print(f'사진의 이름과 형태는 : {file}')
 
         device = torch.device('cpu')
-        model = torch.hub.load('ultralytics/yolov5', 'custom', './best.pt',force_reload=False)  
-        # 업로드한 pt model 주소
         model.to(device)
 
-        #save_dir = './result'   #원하는 경로로 변경가능
-
-        # Load the image using PIL
+        # 업로드한 pt model 주소
+        model = torch.hub.load('ultralytics/yolov5', 'custom', './best.pt',force_reload=False)  
+        
+        # 결과 반환
         img = Image.open(file)
-
-        # Run detection on the image
         results = model(img)
-        
-        #results.save(save_dir=save_dir, exist_ok=True)     
-        #디텍팅된 사진 저장
-        
         detection_index_list = list(results.pandas().xyxy[0]['class'])
 
-        detection_name_list = []
-        detection_dic = {}
+        # 결과 사진 저장
+        #save_dir = './result'   #원하는 경로로 변경가능
+        #results.save(save_dir=save_dir, exist_ok=True)     
         
-        if detection_index_list == []:
-            return make_response(jsonify({'foodlist': ['none'] }), 200)
+        #최종적으로 가는 내용물
+        detection_dic = {"foodCount":0, "foodList":[]}
         
         for i in detection_index_list:
-            detection_name_list.append(foodlist[i])
+            detection_dic["foodCount"] += 1
+            detection_dic["foodList"].append(foodlist[i])
 
         
         #results.render()
-
-        detection_dic["foodlist"] = detection_name_list
         #detection_dic["image"] = results.render()[0].tolist()
         #print(f'이 이미지의 모양은 {results.render()[0].shape}')
 
@@ -63,7 +56,6 @@ def test():
 
         # with open('./json_output.json', 'w', encoding='utf-8') as outfile:
         #     json.dump(json_output, outfile, ensure_ascii=False, indent=2)
-
         return json_output
  
     return make_response(jsonify({'status': True}), 200)
