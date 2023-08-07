@@ -40,11 +40,12 @@ def test():
         #results.save(save_dir=save_dir, exist_ok=True)     
         
         #최종적으로 가는 내용물
-        detection_dic = {"foodCount":0, "foodList":[]}
+        detection_dic = {"foodCount":0, "foodList":[], "foodName":[]}
         
         for i in detection_index_list:
             detection_dic["foodCount"] += 1
             detection_dic["foodList"].append(foodlist[i])
+            detection_dic["foodName"].append(foodlist[i]["name"])
 
         
         #results.render()
