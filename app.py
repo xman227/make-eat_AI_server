@@ -10,29 +10,24 @@ with open(file_path, encoding='utf-8') as f:
 
 app = Flask(__name__)
 
-
-# 선택지 1 base64 로 보내기
-# 선택지 2 Uint8List 로 보내기
-# 선택지 3 list 로 보내기
-# 선택지 4 안보내기
+use_count = 0
 
 @app.route("/image", methods=['POST'])
 def test():
     if request.method == 'POST':
-        print('POST')
 
-        file = request.files['image']
-
-        print(f'사진의 이름과 형태는 : {file}')
-
-        device = torch.device('cpu')
-        # 업로드한 pt model 주소
-        model = torch.hub.load('ultralytics/yolov5', 'custom', './best.pt',force_reload=False)  
-        model.to(device)
+        if use_count == 0:
+            device = torch.device('cpu')
+            # 업로드한 pt model 주소
+            model = torch.hub.load('ultralytics/yolov5', 'custom', './best.pt',force_reload=False)  
+            model.to(device)
+        
+        use_count += 1
 
         # 결과 반환
-        img = Image.open(file)
-        results = model(img)
+        file = request.files['image'] #print(f'사진의 이름과 형태는 : {file}')
+        results = model(Image.open(file))
+    
         detection_index_list = list(results.pandas().xyxy[0]['class'])
 
         # 결과 사진 저장
