@@ -5,27 +5,29 @@
    "carbohydrate": 6.7,
    "protein": 12.7,
    "fat": 0.7,
-   "natrium": 154.0},
+   "totalSugars": 0.22,
+   "natrium": 154.0
+   },
  {"name": "갈비탕",
-   
    "kcal": 363.0,
    "carbohydrate": 2.7,
    "protein": 57.0,
    "fat": 13.8,
+   "totalSugars": 0,
    "natrium": 1330.5},
  {"name": "골드키위",
-   
    "kcal": 500.0,
    "carbohydrate": 1.0,
    "protein": 0.0,
    "fat": 53.0,
+   "totalSugars": 12,
    "natrium": 220.0},
  {"name": "과일채소샐러드",
-   
    "kcal": 15.9,
    "carbohydrate": 2.75,
    "protein": 1.3,
    "fat": 0.09,
+   "totalSugars": 4,
    "natrium": 23.8},
  {"name": "그린올리브",
    
@@ -33,6 +35,7 @@
    "carbohydrate": 0.0,
    "protein": 1.4,
    "fat": 14.5,
+   "totalSugars": 1,
    "natrium": 2000.0},
  {"name": "김구이",
    
@@ -40,6 +43,7 @@
    "carbohydrate": 1.0,
    "protein": 2.0,
    "fat": 0.0,
+   "totalSugars": 0,
    "natrium": 70.0},
  {"name": "달걀말이",
    
@@ -47,6 +51,7 @@
    "carbohydrate": 1.4,
    "protein": 17.2,
    "fat": 13.2,
+   "totalSugars": 0,
    "natrium": 449.07},
  {"name": "닭갈비",
    
@@ -54,6 +59,7 @@
    "carbohydrate": 44.9,
    "protein": 45.9,
    "fat": 25.8,
+   "totalSugars": 2,
    "natrium": 1535.83},
  {"name": "닭살채소두반장볶음",
    
@@ -61,6 +67,7 @@
    "carbohydrate": 16.0,
    "protein": 25.0,
    "fat": 11.0,
+   "totalSugars": 0,
    "natrium": 950.0},
  {"name": "닭파프리카볶음",
    
@@ -68,6 +75,7 @@
    "carbohydrate": 10.0,
    "protein": 24.0,
    "fat": 6.0,
+   "totalSugars": 2,
    "natrium": 580.0},
  {"name": "도리야끼",
    
@@ -75,6 +83,7 @@
    "carbohydrate": 12.0,
    "protein": 22.0,
    "fat": 7.0,
+   "totalSugars": 4,
    "natrium": 660.0},
  {"name": "돼지감자",
    
@@ -82,6 +91,7 @@
    "carbohydrate": 23.0,
    "protein": 19.0,
    "fat": 20.0,
+   "totalSugars": 6.37,
    "natrium": 660.0},
  {"name": "돼지고기볶음",
    
@@ -89,6 +99,7 @@
    "carbohydrate": 18.21,
    "protein": 22.961,
    "fat": 20.665,
+   "totalSugars": 8.2,
    "natrium": 1051.758},
  {"name": "마르게리따피자",
    
@@ -96,6 +107,7 @@
    "carbohydrate": 74.0,
    "protein": 41.0,
    "fat": 42.0,
+   "totalSugars": 4,
    "natrium": 831.0},
  {"name": "마시멜로우",
    
@@ -103,6 +115,7 @@
    "carbohydrate": 5.4,
    "protein": 0.2,
    "fat": 0.0,
+   "totalSugars": 4,
    "natrium": 6.0},
  {"name": "마카롱",
    
@@ -110,6 +123,7 @@
    "carbohydrate": 11.0,
    "protein": 2.0,
    "fat": 5.0,
+   "totalSugars": 43,
    "natrium": 25.0},
  {"name": "메쉬드포테이토",
    
@@ -117,6 +131,7 @@
    "carbohydrate": 29.0,
    "protein": 3.0,
    "fat": 9.0,
+   "totalSugars": 10,
    "natrium": 420.0},
  {"name": "멜론",
    
@@ -124,6 +139,7 @@
    "carbohydrate": 14.0,
    "protein": 1.0,
    "fat": 0.3,
+   "totalSugars": 8,
    "natrium": 25.0},
  {"name": "모듬초밥",
    
@@ -131,6 +147,7 @@
    "carbohydrate": 70.0,
    "protein": 15.0,
    "fat": 3.0,
+   "totalSugars": 10,
    "natrium": 400.0},
  {"name": "모짜렐라치즈",
    
@@ -138,6 +155,7 @@
    "carbohydrate": 1.0,
    "protein": 7.0,
    "fat": 6.0,
+   "totalSugars": 0.5,
    "natrium": 180.0},
  {"name": "무우",
    
@@ -145,6 +163,7 @@
    "carbohydrate": 3.0,
    "protein": 1.0,
    "fat": 0.2,
+   "totalSugars": 2,
    "natrium": 15.0},
  {"name": "미소장국",
    
@@ -152,6 +171,7 @@
    "carbohydrate": 15.0,
    "protein": 5.0,
    "fat": 5.0,
+   "totalSugars": 10,
    "natrium": 1500.0},
  {"name": "미역나물",
    
@@ -159,6 +179,7 @@
    "carbohydrate": 11.0,
    "protein": 1.0,
    "fat": 0.0,
+   "totalSugars": 0,
    "natrium": 222.0},
  {"name": "바게트빵",
    
@@ -166,6 +187,7 @@
    "carbohydrate": 34.0,
    "protein": 6.0,
    "fat": 0.0,
+   "totalSugars": 2,
    "natrium": 386.0},
  {"name": "바나나우유",
    
@@ -173,6 +195,7 @@
    "carbohydrate": 23.0,
    "protein": 4.6,
    "fat": 4.2,
+   "totalSugars": 63,
    "natrium": 100.0},
  {"name": "보드카",
    
@@ -180,6 +203,7 @@
    "carbohydrate": 0.0,
    "protein": 0.0,
    "fat": 0.0,
+   "totalSugars": 0,
    "natrium": 0.0},
  {"name": "보이차",
    
@@ -187,6 +211,7 @@
    "carbohydrate": 0.0,
    "protein": 0.0,
    "fat": 0.0,
+   "totalSugars": 0,
    "natrium": 1.0},
  {"name": "붉은 양배추 절임",
    
@@ -194,6 +219,7 @@
    "carbohydrate": 6.0,
    "protein": 1.0,
    "fat": 0.0,
+   "totalSugars": 2,
    "natrium": 31.0},
  {"name": "브라질너트",
    
@@ -201,6 +227,7 @@
    "carbohydrate": 2.1,
    "protein": 4.2,
    "fat": 18.6,
+   "totalSugars": 1,
    "natrium": 0.0},
  {"name": "상추샐러드",
    
@@ -208,6 +235,7 @@
    "carbohydrate": 3.2,
    "protein": 2.2,
    "fat": 0.2,
+   "totalSugars": 1,
    "natrium": 9.0},
  {"name": "생맥주",
    
@@ -215,6 +243,7 @@
    "carbohydrate": 12.6,
    "protein": 1.5,
    "fat": 0.0,
+   "totalSugars": 10,
    "natrium": 7.0},
  {"name": "송편",
    
@@ -222,6 +251,7 @@
    "carbohydrate": 41.0,
    "protein": 2.5,
    "fat": 1.0,
+   "totalSugars": 2,
    "natrium": 3.0},
  {"name": "순대국밥",
    
@@ -229,6 +259,7 @@
    "carbohydrate": 93.5,
    "protein": 28.6,
    "fat": 20.6,
+   "totalSugars": 1.5,
    "natrium": 1137.0},
  {"name": "순살찜닭",
    
@@ -236,6 +267,7 @@
    "carbohydrate": 5.8,
    "protein": 19.2,
    "fat": 6.5,
+   "totalSugars": 22,
    "natrium": 408.0},
  {"name": "슈크림",
    
@@ -243,6 +275,7 @@
    "carbohydrate": 12.0,
    "protein": 2.7,
    "fat": 8.4,
+   "totalSugars": 30,
    "natrium": 36.0},
  {"name": "스크램블드에그",
    
@@ -250,6 +283,7 @@
    "carbohydrate": 2.8,
    "protein": 13.0,
    "fat": 19.3,
+   "totalSugars": 4,
    "natrium": 406.39},
  {"name": "스테이크",
    
@@ -257,6 +291,7 @@
    "carbohydrate": 0.0,
    "protein": 29.6,
    "fat": 17.2,
+   "totalSugars": 4,
    "natrium": 56.0},
  {"name": "스튜",
    
@@ -264,6 +299,7 @@
    "carbohydrate": 10.7,
    "protein": 5.9,
    "fat": 4.5,
+   "totalSugars": 7,
    "natrium": 295.0},
  {"name": "달걀",
    
@@ -271,6 +307,7 @@
    "carbohydrate": 0.6,
    "protein": 6.3,
    "fat": 5.3,
+   "totalSugars": 1,
    "natrium": 62.0},
  {"name": "달걀후라이",
    
@@ -278,6 +315,7 @@
    "carbohydrate": 0.9,
    "protein": 12.6,
    "fat": 10.9,
+   "totalSugars": 1,
    "natrium": 142.0},
  {"name": "닭가슴살",
    
@@ -285,6 +323,7 @@
    "carbohydrate": 0.0,
    "protein": 23.0,
    "fat": 1.3,
+   "totalSugars": 0.5,
    "natrium": 65.0},
  {"name": "당근",
    
@@ -292,6 +331,7 @@
    "carbohydrate": 9.6,
    "protein": 0.9,
    "fat": 0.2,
+   "totalSugars": 0,
    "natrium": 35.0},
  {"name": "메밀",
    
@@ -299,6 +339,7 @@
    "carbohydrate": 73.8,
    "protein": 10.3,
    "fat": 2.2,
+   "totalSugars": 5,
    "natrium": 3.0},
  {"name": "바나나",
    
@@ -306,6 +347,7 @@
    "carbohydrate": 30.0,
    "protein": 3.0,
    "fat": 0.3,
+   "totalSugars": 21,
    "natrium": 1.0},
  {"name": "밥",
    
@@ -313,6 +355,7 @@
    "carbohydrate": 28.0,
    "protein": 2.0,
    "fat": 0.3,
+   "totalSugars": 0.5,
    "natrium": 1.0},
  {"name": "빵",
    
@@ -320,6 +363,7 @@
    "carbohydrate": 18.0,
    "protein": 3.0,
    "fat": 1.0,
+   "totalSugars": 10,
    "natrium": 150.0},
  {"name": "사과",
    
@@ -327,6 +371,7 @@
    "carbohydrate": 25.0,
    "protein": 0.5,
    "fat": 0.3,
+   "totalSugars": 11,
    "natrium": 1.0},
  {"name": "상추",
    
@@ -334,6 +379,7 @@
    "carbohydrate": 2.9,
    "protein": 1.4,
    "fat": 0.2,
+   "totalSugars": 0,
    "natrium": 28.0},
  {"name": "오트밀",
    
@@ -341,6 +387,7 @@
    "carbohydrate": 67.7,
    "protein": 16.9,
    "fat": 6.9,
+   "totalSugars": 2,
    "natrium": 7.0},
  {"name": "치즈",
    
@@ -348,6 +395,7 @@
    "carbohydrate": 2.4,
    "protein": 25.4,
    "fat": 33.2,
+   "totalSugars": 1,
    "natrium": 1659.0},
  {"name": "토스트",
    
@@ -355,6 +403,7 @@
    "carbohydrate": 18.8,
    "protein": 3.0,
    "fat": 0.8,
+   "totalSugars": 10,
    "natrium": 180.0},
  {"name": "통밀빵",
    
@@ -362,6 +411,7 @@
    "carbohydrate": 16.2,
    "protein": 2.8,
    "fat": 0.8,
+   "totalSugars": 3,
    "natrium": 132.0},
  {"name": "김",
    
@@ -369,6 +419,7 @@
    "carbohydrate": 0.8,
    "protein": 0.6,
    "fat": 0.1,
+   "totalSugars": 0,
    "natrium": 29.0},
  {"name": "냉면",
    
@@ -376,6 +427,7 @@
    "carbohydrate": 143.0,
    "protein": 14.0,
    "fat": 3.0,
+   "totalSugars": 20,
    "natrium": 3513.0},
  {"name": "닭가슴살샐러드",
    
@@ -383,6 +435,7 @@
    "carbohydrate": 8.0,
    "protein": 10.8,
    "fat": 14.2,
+   "totalSugars": 0.5,
    "natrium": 132.24},
  {"name": "돼지고기구이",
    
@@ -390,6 +443,7 @@
    "carbohydrate": 0.0,
    "protein": 29.1,
    "fat": 23.7,
+   "totalSugars": 4,
    "natrium": 79.0},
  {"name": "두부",
    
@@ -397,6 +451,7 @@
    "carbohydrate": 3.75,
    "protein": 9.62,
    "fat": 4.63,
+   "totalSugars": 1,
    "natrium": 1.0},
  {"name": "삶은달걀",
    
@@ -404,6 +459,7 @@
    "carbohydrate": 0.6,
    "protein": 6.5,
    "fat": 5.3,
+   "totalSugars": 2,
    "natrium": 62.0},
  {"name": "삼겹살",
    
@@ -411,6 +467,7 @@
    "carbohydrate": 0.0,
    "protein": 20.3,
    "fat": 45.5,
+   "totalSugars": 3,
    "natrium": 61.0},
  {"name": "새우",
    
@@ -418,6 +475,7 @@
    "carbohydrate": 2.7,
    "protein": 1.75,
    "fat": 1.06,
+   "totalSugars": 2,
    "natrium": 74.79},
  {"name": "토마토샐러드",
    
@@ -425,5 +483,6 @@
    "carbohydrate": 8.9,
    "protein": 1.6,
    "fat": 0.3,
+   "totalSugars": 1,
    "natrium": 12.0}
 ]
