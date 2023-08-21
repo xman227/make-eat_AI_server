@@ -10,19 +10,20 @@ with open(file_path, encoding='utf-8') as f:
 
 app = Flask(__name__)
 
-use_count = 0
+use_count = [0]
 
 @app.route("/image", methods=['POST'])
 def test():
     if request.method == 'POST':
 
-        if use_count == 0:
+        if use_count[0] == 0:
             device = torch.device('cpu')
             # 업로드한 pt model 주소
             model = torch.hub.load('ultralytics/yolov5', 'custom', './best.pt',force_reload=False)  
             model.to(device)
         
-        use_count += 1
+        
+        use_count[0] += 1
 
         # 결과 반환
         file = request.files['image'] #print(f'사진의 이름과 형태는 : {file}')
